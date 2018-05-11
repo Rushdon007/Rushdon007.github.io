@@ -4,270 +4,474 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
+.html {
+    background-color: red;
+}
 
 body{
-    margin:0;
-background-color: lightgray;
-
-
-}
-
-header {
-    background: gray;
-    color: rgb(62, 241, 167);
-    padding: 8px 0px 6px 40px;
-    height: 45px;
-}
-
-header h1{
-    display: inline;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    font-size: 32px;
-    float: left;
-    margin-top: 0px;
-    margin-right: 10px;
-
-
-}
-nav ul {
-    display: inline;
-    padding: 0px;
-    float:  left;
-}
-nav ul li {
-    display: inline-block;
-    list-style-type: none;
-    color: white;
-    float: left;
-    margin-left: 12px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration:none;
-
-}
-
-
-#nav {
-    font-family: 'Montserrat', sans-serif;
-
-}
-
-.homered {
-    background-color: red;
-    padding: 30px 10px 16px 10px;
-}
-
-.divider {
-    background-color: red;
-    height: 5px;
-}
-
-.homeblack:hover {
-    background-color: blue;
-    padding: 30px 10px 16px 10px;
-
-}
-.home {
+    
+    background-color:  gray;
+    font-size: 100%;
     width: 100%;
-    height: 90%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-
-}
-#borderimg { 
-    border: 10px solid transparent;
-    padding: 50px;
-    border-image: url(border.png) 30 round;
-}
-.homesub{
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-   padding: 9% 5% 0% 55%;
-   font-size: 18px;
-   color:yellow;
-}
-.homedes {
-    font-family: 'Raleway', sans-serif;
-    margin: 0.5% 0% 0% 55%;
-    font-size: 75px;
-    color:white;
-    background-color: rgb(0, 0, 0,0.4);
-    display: inline-block;
-
-}
-.homepho{
-    font-family: 'Raleway', sans-serif;
-    margin: 0% 0% 0% 55%;
-    font-size: 64px;
-    color: black;
-    display: inline-block;
-
+    margin: 0 auto;
+    /*border: 3px solid #931420;*/
 
 }
 
-.buttonhome {
-    margin: 0% 0% 0% 55%;
-    background: yellow;
-    color: black;
-    border: none;
-    height: 50px;
-    font-size: 1.4em;
-    padding: 0 1em;
-    cursor: pointer;
-    outline: none;
-    font-family: 'Raleway', sans-serif;
-    font-weight:900px;
+a:focus, a:hover {
+	font-style: italic;
 }
 
 
+/* the styles for the sidebar menu */
 
-/* forms */
 
-.contactus {
-    position: absolute;
-    right: 0;
-    float: right;
-    top: 150px;
-    color: blueviolet;
-    padding: 0 60px;
-    
+
+#nav_list ul li a {
+    display: block;
+    padding: .4em 0 .5em 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: black; 
+	}
+
+#nav_list ul li a.current {
+    color: #f89d9d; }
+
+
+
+/* the styles for the main nav menu */
+.header{
+	width:100%;
+	background-color: #808080;
 }
 
-.text {
-    width: 55%;
-    height: 65px;
-
-    border: 3px solid black;
-    color: gray;
-    background-color: rgba(0, 0, 0, 0.7);
-    font-size: 20px;
-    padding: 0 10px;
-    float: right;
-    margin-bottom: 15px;
-
-
-    
-}
-
-.message {
-    width: 55%;
-    height: 135px;
-
-    
-    border: 3px solid black;
-    color: gray;
-    background-color: rgba(18, 233, 143);
-    font-size: 20px;
-    padding: 0 10px;
-    float: right;
-    padding-right: 10%
-  
-
-}
-.button {
-    width: 160px;
-    height: 65px;
-    font-family: 'Raleway', sans-serif;
-
-    background-color: rgb(18, 233, 143);
-    color: gray;
-    font-size: 20px;
-    border: none;
-    margin-top: 25px;
-    float: right;
-    clear: both;
-    
-
- 
+#nav_menu ul {
+	list-style: none;
+	
+	margin: 0px;
+	padding: 0px;
+    width:100%;
+    font-size: 20;
 
 }
 
-
-/* gallary*/
-
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+#nav_menu ul li {
+	float: left; 
 }
 
-
-.gallery .image {
-    width: 30%;
-    margin: 3%;
-    float: center;
-}
-
-
-
-/* google maps */
-#map {
-    padding: 0 40px;
-    width: 10px;
-    height: 1px;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-}
-
-
-
-/* gallery */
-
-
-
-/* Center website */
-
-
-h1 {
-    font-size: 50px;
-    word-break: break-all;
-}
-
-.row {
-    margin: 9px 16px;
-}
-
-/* Add padding BETWEEN each column */
-
-
-
-/* Create four equal columns that floats next to each other */
-.column {
-    float: right;
-    width: 30%;
-}
-
-/* Clear floats after rows */ 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Content */
-.content {
-    background-color: rgb(232, 249, 250);
-    padding: 8.89px;
-}
-
-/* footer */
-
-footer {
-	background-color: gray;
-    clear: both;
-   padding-bottom: 2%;
-   padding-inline-end: 1%
-
-}
-footer p {
-	text-align: center;
+#nav_menu  li a {
+	background-color: #808080;
 	color: white;
-    padding: 0.5em 0;
+	font-weight: bold;
+	padding-top: 1.8em;
+	padding-bottom: 1.4em;
+	display: block; 
+
+	text-align: center;
+	text-decoration: none; 
+	width:165px;	
+}
+
+#nav_menu ul li a.current {
+	color: rgb(10, 8, 8);
+}
+
+
+#nav_menu ul ul { 
+	display: none;
+	position: absolute;
 
 }
+
+#nav_menu ul ul li {
+	float: none;
+}
+
+#nav_menu ul li:hover > ul {
+	display: block; 
+}
+
+#nav_menu > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.centered{
+    position: absolute;
+    display: inline-block;
+    top:27%;
+    left:30%;
+    /* transform: translate (-50%, -50%); */
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 150px;
+    text-transform: uppercase;
+}
+
+    section {
+        width: 100%;
+        padding: 0px;
+    
+        
+    }
+    
+    section h2 {
+        color: #e61b1b;
+        font-size: 90%;
+        padding-top: 4.5em;
+        padding-left: 5%;
+        margin: 0;
+        
+    } 
+    
+    
+    section p {
+        padding-left:5%;
+      
+    
+        
+    }
+    section a {
+        padding-left: 0%;
+    }
+    ul {
+        padding-left: 5%;
+    } 
+    
+    action{
+        padding-left: 5%;
+    }
+    form{
+        padding-left: 5%;
+    }
+    /*container*/
+    table {
+    margin-left: 0px;
+    padding: 45px;
+    }
+    #img{
+        position: absolute;
+        right:0;
+    }
+    #map{
+        position: absolute;
+        right:0;
+    }
+    
+    #name
+    {
+        text-decoration: underline;
+    }
+    #email
+    {
+        text-decoration: underline;
+    }
+    #website 
+    {
+        text-decoration: underline;
+        
+    }
+    #phone
+    {
+        text-decoration: underline;
+    }
+    /* the styles for the footer */
+    footer {
+        background-color: gray;
+        clear: both;
+    
+    }
+    footer p {
+        text-align: center;
+        color: white;
+        padding: 0.9em 0;
+        
+    }
+    header, footer {
+        padding: 0.1em;
+        
+        color: white;
+        background-color: rgb(128,128,128);
+        text-align: center;
+    }
+    
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text], select, textarea {
+        width: 100%; /* Full width */
+        padding: 12px; /* Some padding */  
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 4px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+    
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+    
+    /* Add a background color and some padding around the form */
+    .container {
+        border-radius: 5px;
+        background-color: gray;
+        padding: 20px;
+    }
+    
+    
+    
+    
+    
+    /* gallery image */
+    
+    * {
+        box-sizing: border-box;
+      }
+      
+    
+     
+      .row {
+          padding: 60px;
+      }
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      .column {
+        float: left;
+        width: 30%;
+        padding: 20px;
+        padding-right: 11px;
+      }
+      
+      /* The Modal (background) */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+      }
+      
+      /* Modal Content */
+      .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-width: 1200px;
+      }
+      
+      /* The Close Button */
+      .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      
+      .mySlides {
+        display: none;
+      }
+      
+      .cursor {
+        cursor: pointer
+      }
+      
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      img {
+        margin-bottom: -4px;
+      }
+      iframe {
+        margin-bottom: -4px;
+      }
+      
+      .caption-container {
+        text-align: center;
+        background-color: black;
+        padding: 2px 16px;
+        color: white;
+      }
+      
+      .demo {
+        opacity: 0.6;
+      }
+      
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+      
+      img.hover-shadow {
+        transition: 0.3s
+      }
+      
+      .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+      }
+    
+    
+    
+    
+    
+    
+      
+    
+    
+     
+    
+    p{
+    
+        padding-left: 79%;
+    }
+    
+    /* explore */
+    
+    
+      
+    
+      .ex::after{
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .ex {
+          padding: 1360px;
+          margin: 0;
+          padding-left: 0;
+      }
+      
+      
+      
+      .expl {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+      }
+
+
+
+      pic {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ex{
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+      }
+
+    
+      .video {
+        float: left;
+        width: 60%;
+      }
+      .pic {
+        float: right;
+        padding-right: 90%;
+      }
+
+      .column1{
+        float: left;
+        width: 40%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+    }
+    
+    /* Clear floats after the columns */
+    .row1:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+    
+    .lo {
+      margin-left:15px;
+      list-style: none;
+text-decoration:none;
+float: right;
+display:inline-block;  
+position: relative;
+  }
+  .lo1 {
+      margin-left:70px;
+      list-style: none;
+text-decoration:none;
+display:inline-block;  
+float: right;
+
+position: relative;
+  }
+ 
